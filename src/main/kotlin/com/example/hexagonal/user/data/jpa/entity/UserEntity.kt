@@ -26,7 +26,4 @@ class UserEntity(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null
 
-//    fun isMatchedPassword(password: String): Boolean {
-//        return this.password.isMatched(password)
-//    }
 }
