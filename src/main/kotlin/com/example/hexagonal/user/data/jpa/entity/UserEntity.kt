@@ -9,7 +9,7 @@ import jakarta.persistence.*
 @Table(name = "users")
 class UserEntity(
     @Column(unique = true)
-    val userId: String,
+    val username: String,
     val name: String,
 
     @Embedded

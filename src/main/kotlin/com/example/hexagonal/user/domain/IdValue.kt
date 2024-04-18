@@ -3,7 +3,9 @@ package com.example.hexagonal.user.domain
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 
 
-class IdValue (val value: String) {
+class IdValue private constructor(
+    private val value: String
+) {
 
     companion object {
         fun create(value: String): IdValue {

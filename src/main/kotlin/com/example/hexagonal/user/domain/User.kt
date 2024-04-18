@@ -1,8 +1,9 @@
 package com.example.hexagonal.user.domain
 
 class User(
-    val userId: String,
-    val id: IdValue,
+    val username: String,
+    val id: Long,
+    val idValue: IdValue,
     val idType: IdType,
     val password: Password,
     val name: String,
