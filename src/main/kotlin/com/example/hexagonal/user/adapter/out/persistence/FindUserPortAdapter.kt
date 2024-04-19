@@ -12,6 +12,6 @@ class FindUserPortAdapter(
 ): FindUserPort {
 
     override fun invokeByUsername(username: String): User? {
-        this.userEntityRepository.findByUsername(username)
+        val entity = this.userEntityRepository.findByUsername(username)
     }
 }
