@@ -10,7 +10,7 @@ class ExistsUserPortAdapter(
 ): ExistsUserPort {
 
     override fun invokeByUsername(username: String): Boolean {
-        return userEntityRepository.existsByUsername(username)
+        return this.userEntityRepository.existsByUsername(username)
     }
 
 
